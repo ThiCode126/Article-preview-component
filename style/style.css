@@ -1,0 +1,130 @@
+:root {
+    --Grayish-dark-color: hsl(217, 19%, 35%);
+    --dark-blue-color: hsl(214, 17%, 51%);
+    --Grayish-blue-color:hsl(212, 23%, 69%);
+    --Grayish-light-color: hsl(210, 46%, 95%);
+    --white-color: #fff;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    background-color: var(--Grayish-light-color);
+    font-family: 'Manrope', sans-serif;
+}
+
+.card {
+    width: 327px;
+    margin: 74px auto 0;
+    background: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.card img.draw {
+    width: 327px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .card-body {
+    margin: 36px 32px 20px;
+}
+
+.card .card-body p#title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--Grayish-dark-color);
+    margin-bottom: 12px;
+}
+
+.card .card-body p#body {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+    color: var(--dark-blue-color);
+    margin-bottom: 32px;
+}
+
+.card .bottom {
+    display: grid;
+    grid-template-columns: 40px auto 32px;
+    margin: 0;
+}
+
+.card .bottom img.circle {
+    border-radius: 50%;
+}
+
+.card .bottom img#profil {
+    width: 40px;
+    height: 40px;
+}
+
+.card .bottom #info {
+    margin-left: 16px;
+}
+
+.card .bottom #info #name {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+    color: var(--Grayish-dark-color);
+}
+
+.card .bottom #info #date {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+    color: var(--Grayish-blue-color);
+}
+
+.card .bottom img#share {
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+    background-color: var(--Grayish-light-color);
+}
+
+
+
+@media screen and (min-width: 760px) {
+    .card {
+        width: 730px;
+        flex-direction: row;
+    }
+
+    .card img.draw {
+        width: 285px;
+        height: 280px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+    }
+
+    .card .card-body {
+        margin: 32px 40px;
+    }
+
+    .card .card-body p#title {
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
+    }
+
+    .card .card-body p#body {
+        margin-bottom: 20px;
+        font-weight: 200;
+    }
+
+} 
