@@ -153,6 +153,7 @@ body {
     .card {
         width: 730px;
         flex-direction: row;
+        margin-top: 260px;
     }
 
     .card img.draw {
